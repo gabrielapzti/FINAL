@@ -306,7 +306,7 @@ export function init() {
 
   renderer.render(scene, camera);
 
-  //CHAO DO AMBIENTE
+  //CHAO DO AMBIENTE - GABI
 
   let textLoader = new THREE.TextureLoader();
   let textGround = textLoader.load("assets/piso.jpg");
