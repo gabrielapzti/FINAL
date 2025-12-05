@@ -215,14 +215,14 @@ var loadObj = function () {
     }
   );
 
-  fbxLoader.load(
-    "assets/fbx/Dragon3.fbx",
+   fbxLoader.load(
+    "assets/gato/cat.obj",
     function (obj) {
       obj.traverse(function (child) {
         if (child instanceof THREE.Mesh) {
           console.log(child);
 
-          let texture = textLoader.load("assets/fbx/Dragon_ground_color.jpg");
+          let texture = textLoader.load("assets/gato/cat_texture.jpg");
           child.material = new THREE.MeshStandardMaterial({ map: texture });
           child.castShadow = true;
           child.receiveShadow = true;
