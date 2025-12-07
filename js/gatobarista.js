@@ -215,8 +215,8 @@ var loadObj = function () {
     }
   );
 
-   fbxLoader.load(
-    "assets/gato/cat.obj",
+  fbxLoader.load(
+    "assets/cat.obj",
     function (obj) {
       obj.traverse(function (child) {
         if (child instanceof THREE.Mesh) {
